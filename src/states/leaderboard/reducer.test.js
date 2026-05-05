@@ -9,7 +9,7 @@
 import { describe, expect, it } from 'vitest';
 import leaderboardReducer from './reducer';
 
-describe('leaderBoardReducers function', () => {
+describe('leaderboardReducers function', () => {
   it('should return the initial state when given by unknown action', () => {
     // arrange
     const initialState = [];
