@@ -11,6 +11,12 @@ import api from '../../utils/api';
 import { addThreadActionCreator, asyncAddThread } from './action';
 import { hideLoading, showLoading } from '@dimasmds/react-redux-loading-bar';
 
+const fakeThreadInput = {
+  title: 'Thread Pertama',
+  body: 'Ini adalah thread pertama',
+  category: 'General'
+};
+
 const fakeThreadData = {
   'id': 'thread-1',
   'title': 'Thread Pertama',
@@ -45,7 +51,7 @@ describe('asyncAddThread thunk', () => {
     const dispatch = vi.fn();
 
     // action
-    await asyncAddThread(fakeThreadData)(dispatch);
+    await asyncAddThread(fakeThreadInput)(dispatch);
 
     // assert
     expect(dispatch).toHaveBeenCalledWith(showLoading());
@@ -63,7 +69,7 @@ describe('asyncAddThread thunk', () => {
     window.alert = vi.fn();
 
     // action
-    await asyncAddThread(fakeThreadData)(dispatch);
+    await asyncAddThread(fakeThreadInput)(dispatch);
 
     // assert
     expect(dispatch).toHaveBeenCalledWith(showLoading());
