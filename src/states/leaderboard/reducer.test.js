@@ -12,7 +12,7 @@ import leaderboardReducer from './reducer';
 describe('leaderboardReducers function', () => {
   it('should return the initial state when given by unknown action', () => {
     // arrange
-    const initialState = [];
+    const initialState = null;
     const action = { type: 'UNKNOWN' };
 
     // action
@@ -24,7 +24,7 @@ describe('leaderboardReducers function', () => {
 
   it('should return the leaderboard when given by RECEIVE_LEADERBOARD action', () => {
     // arrange
-    const initialState = [];
+    const initialState = null;
     const action = {
       type: 'RECEIVE_LEADERBOARD',
       payload: {
