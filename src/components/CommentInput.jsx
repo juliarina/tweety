@@ -13,8 +13,8 @@ function CommentInput({ addComment }) {
 
   return (
     <form className="comment-input" onSubmit={onSubmitHandler}>
-      <textarea rows="4" className="comment-input_description" value={comment} onChange={onCommentChange} required></textarea>
-      <button>Kirim</button>
+      <textarea rows="4" className="comment-input_description" value={comment} onChange={onCommentChange} placeholder="Write something..." required></textarea>
+      <button>Send</button>
     </form>
   );
 }
