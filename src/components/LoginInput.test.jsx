@@ -36,7 +36,7 @@ describe('LoginInput component', () => {
   it('should handle password typing correctly', async () => {
     // Arrange
     render(<LoginInput login={() => {}} />);
-    const passwordInput = screen.getByPlaceholderText('Password');
+    const passwordInput = await screen.getByPlaceholderText('Password');
 
     // Action
     await userEvent.type(passwordInput, 'passwordTest');
