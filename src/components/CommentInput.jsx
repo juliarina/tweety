@@ -7,8 +7,8 @@ function CommentInput({ addComment }) {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    setComment('');
     addComment(comment);
+    setComment('');
   };
 
   return (
