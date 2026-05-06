@@ -16,7 +16,7 @@ import matchers from '@testing-library/jest-dom/matchers';
 
 expect.extend(matchers);
 
-describe('LoginInout component', () => {
+describe('LoginInput component', () => {
   afterEach(() => {
     cleanup();
   });
