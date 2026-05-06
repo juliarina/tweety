@@ -52,9 +52,9 @@ function DetailPage() {
   return (
     <section>
       <PostItem classCategory="details" {...threadDetailModified} user={threadDetail.owner} totalComments={threadDetail.comments.length} upVote={upVoteHandler} downVote={downVoteHandler} neutralizeVote={neutralizeVoteHandler} authUser={authUser}/>
-      <h3 className="comment-input_title">Beri Komentar</h3>
+      <h3 className="comment-input_title">Leave a comment</h3>
       <CommentInput addComment={onAddCommentHandler}/>
-      <h3 className="comment-container_title">Komentar ({threadDetail.comments.length})</h3>
+      <h3 className="comment-container_title">Comments ({threadDetail.comments.length})</h3>
       <CommentList comments={threadDetailModified.comments} authUser={authUser} threadId={threadDetail.id}/>
     </section>
   );
