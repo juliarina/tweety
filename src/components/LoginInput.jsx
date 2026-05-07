@@ -12,11 +12,11 @@ function LoginInput({ login }) {
   };
 
   return (
-    <form className="login-input" onSubmit={onSubmitHandler}>
+    <div className="login-input">
       <input type="email" placeholder="Email" required value={email} onChange={onEmailChange}/>
       <input type="password" placeholder="Password" required value={password} onChange={onPasswordChange}/>
-      <button>Login</button>
-    </form>
+      <button onClick={onSubmitHandler}>Login</button>
+    </div>
   );
 }
 
