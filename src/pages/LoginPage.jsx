@@ -15,7 +15,7 @@ function LoginPage() {
     <section>
       <h2>Login</h2>
       <LoginInput login={onLogin}/>
-      <p>Don&apost have account? <Link to="/register">Register here</Link>.</p>
+      <p>Don&apos;t have account? <Link to="/register">Register here</Link>.</p>
     </section>
   );
 }
