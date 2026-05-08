@@ -47,7 +47,7 @@ describe('Login spec', () => {
     cy.get('input[placeholder="Email"]').type('dicoding123@mail.com');
 
     // mengisi password yang salah
-    cy.get('input[placeholder="Password"]').type('wrong_password')
+    cy.get('input[placeholder="Password"]').type('wrong_password');
 
     // menekan tombol Login
     cy.get('button').contains(/^Login$/).click();
@@ -63,14 +63,14 @@ describe('Login spec', () => {
     cy.get('input[placeholder="Email"]').type('dicoding123@mail.com');
 
     // mengisi password yang salah
-    cy.get('input[placeholder="Password"]').type('dicoding123')
+    cy.get('input[placeholder="Password"]').type('dicoding123');
 
     // menekan tombol Login
     cy.get('button').contains(/^Login$/).click();
 
     // memverifikasi bahwa elemen yang berada di homepage ditampilkan
     cy.get('h3').contains('Popular Category').should('be.visible');
-    cy.get('h2').contains('Available Discussion').should('be.visible')
+    cy.get('h2').contains('Available Discussion').should('be.visible');
     cy.get('.add-button').should('be.visible');
   });
 });

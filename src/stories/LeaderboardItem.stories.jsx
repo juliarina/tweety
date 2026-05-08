@@ -1,3 +1,4 @@
+import React from 'react';
 import LeaderboardItem from '../components/LeaderboardItem';
 
 export default {
@@ -5,7 +6,7 @@ export default {
   component: LeaderboardItem,
 };
 
-const TemplateStory = (args) => <LeaderboardItem {...args} />
+const TemplateStory = (args) => <LeaderboardItem {...args} />;
 
 export const Default = TemplateStory.bind({});
 

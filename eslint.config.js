@@ -1,11 +1,11 @@
 // For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
-import storybook from "eslint-plugin-storybook";
+import storybook from 'eslint-plugin-storybook';
 
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import pluginReact from 'eslint-plugin-react';
 import daStyle from 'eslint-config-dicodingacademy';
-import pluginCypress from 'eslint-plugin-cypress/flat';
+import pluginCypress from 'eslint-plugin-cypress';
 
 export default [{
   files: ['**/*.{js,mjs,cjs,jsx}'],
@@ -16,10 +16,10 @@ export default [{
       ...globals.node,
     },
   },
-}, pluginJs.configs.recommended, pluginReact.configs.flat.recommended, pluginCypress.configs.recommended, daStyle, {
+}, pluginJs.configs.recommended, pluginReact.configs.flat.recommended, pluginCypress.configs.globals, daStyle, {
   settings: {
     react: {
       version: 'detect',
     },
   },
-}, ...storybook.configs["flat/recommended"]];
+}, ...storybook.configs['flat/recommended']];
