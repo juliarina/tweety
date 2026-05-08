@@ -15,7 +15,6 @@ function LeaderboardItem({ user: { id, name, avatar }, score, userId }) {
 
 LeaderboardItem.propTypes = {
   user: PropTypes.object.isRequired,
-  avatar: PropTypes.string.isRequired,
   score: PropTypes.number.isRequired,
   userId: PropTypes.string.isRequired,
 };
