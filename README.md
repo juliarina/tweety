@@ -2,7 +2,7 @@
 This project was developed as the final submission for the "Menjadi React Web Developer Expert" course on Dicoding, earning a perfect 5/5 rating upon completion by successfully meeting all evaluation criteria and recommendations.
 
 ## Demo
-tweety-project.vercel.app
+https://tweety-project.vercel.app
 
 ## Tech Stack
 - HTML
