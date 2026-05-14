@@ -17,6 +17,9 @@ https://tweety-project.vercel.app
 - Comment on post
 - Filter post by category
 - View leaderboard
+- State management using redux
+- Automated testing implementation (unit, integration, and end-to-end testing)
+- CI/CD implementation using Github Actions and Vercel
 
 ## Screenshot
 <img width="960" height="474" alt="Screenshot 2026-05-14 073508" src="https://github.com/user-attachments/assets/b738bc3e-c96d-4bcb-8fb8-c87d9b887926" /><br>
